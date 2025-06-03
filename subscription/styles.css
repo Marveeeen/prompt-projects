@@ -1,0 +1,124 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif; /* Modern clean font */
+  background-color: #ffffff; /* Pure white background */
+  color: #111111; /* Deep charcoal text for subtle contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container with white space and subtle border */
+.container {
+  padding: 3rem;
+  max-width: 480px;
+  width: 100%;
+  border: 1px solid #eaeaea; /* Very light gray border */
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Gentle shadow */
+  text-align: center;
+}
+
+/* Heading style */
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+/* Paragraph style with extra white space */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444444; /* Soft dark gray */
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Form layout with vertical spacing */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Input styling */
+.subscribe-form input[type="email"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Light background for subtle texture */
+  transition: border 0.3s ease;
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: #888; /* Slightly darker border on focus */
+  outline: none;
+}
+
+.subscribe-form label {
+    text-align: left;
+}
+
+/* Button styling */
+.subscribe-form button {
+  background-color: #111111; /* Dark gray/black for bold contrast */
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #333333;
+}
+
+/* Product preview section */
+.product-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Modern necklace visual - simplified and elegant */
+.necklace {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #333; /* Thin dark border for a clean circle */
+  background-color: transparent;
+  position: relative;
+}
+
+.necklace::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 14px;
+  border-top: 1px solid #333;
+  border-radius: 50%;
+}
+
+/* Caption with minimal tone */
+.caption {
+  font-size: 0.85rem;
+  color: #777777;
+  text-align: center;
+}
