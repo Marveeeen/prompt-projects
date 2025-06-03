@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIF Gala RSVP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Invitation Header -->
+      <header>
+        <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+        <h2 class="subheading">05/29/2025</h2>
+      </header>
+
+      <!-- Event Description -->
+      <section class="description">
+        <p>
+          Dress up as your favorite GIF or meme and get ready for a night of
+          pixel-perfect fun, viral vibes, and endless loops of laughter. The GIF
+          Gala celebrates the most iconic moments in internet culture, brought
+          to life in the most fashionable ways!
+        </p>
+      </section>
+
+      <!-- RSVP Form -->
+      <section class="rsvp-section">
+        <form id="rsvp-form">
+          <label for="email">Email Address <span>*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+          />
+
+          <label for="attendance">Will you attend? <span>*</span></label>
+          <select id="attendance" name="attendance" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes, I'm looping in!</option>
+            <option value="no">No, maybe next meme!</option>
+          </select>
+
+          <button type="submit">Submit RSVP</button>
+        </form>
+
+        <!-- Confirmation Message Display -->
+        <div id="confirmation-message" class="confirmation" hidden>
+          <!-- Message will be populated via JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
