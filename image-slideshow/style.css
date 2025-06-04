@@ -1,0 +1,105 @@
+/* === Basic Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* === Slider Container === */
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* === Slides Wrapper === */
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* === Individual Slide === */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* === Overlay Text === */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 1.2rem;
+
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  color: #1f2937;
+  backdrop-filter: blur(4px);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.overlay p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white;
+}
+
+/* === Show Active Slide === */
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* === Dot Navigation === */
+.dot-nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3b82f6;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <!-- Slide Wrapper -->
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <img src="image.png" alt="Project 1" />
+          <div class="overlay">
+            <h2>Majestic Discount Form</h2>
+            <p>
+              A sleek email capture form offering 15% off for new subscribers to
+              a couple's necklace subscription. Clean design with a focus on
+              conversion.
+            </p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="image1.png" alt="Project 2" />
+          <div class="overlay">
+            <h2>GIF Gala RSVP</h2>
+            <p>
+              A fun RSVP form for a themed event, styled with playful colors and
+              clear inputs to gather email and attendance responses easily.
+            </p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="image2.png" alt="Project 3" />
+          <div class="overlay">
+            <h2>FaceBomp Game</h2>
+            <p>
+              A retro-style browser game where players "bomp" popping faces for
+              points. Bright visuals, arcade font, and a playful timer bring it
+              to life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dot Navigation -->
+      <div class="dot-nav">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
