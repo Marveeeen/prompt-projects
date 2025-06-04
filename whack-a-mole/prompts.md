@@ -13,8 +13,7 @@ Let's start with the HTML only, which should link to CSS and JS files:
 
 ## Prompt 2
 
-Style the game using a bright blue theme with background gradients
-and complementary shades for the game controls and holes.
+Style the game using a retro style theme and complementary shades for the game controls and holes.
 
 I want the holes to be circular and the photos to have a popping in/out effect.
 Place the holes on a grid and center each image inside its hole.
