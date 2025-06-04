@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceBomp Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>FaceBomp!</h1>
+
+      <div class="game-info">
+        <button id="start-button">Start Game</button>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="timer">Time Left: <span id="time">30</span>s</div>
+      </div>
+
+      <div id="game-board" class="game-board">
+        <div class="hole" id="hole1">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+        <div class="hole" id="hole2">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+        <div class="hole" id="hole3">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+        <div class="hole" id="hole4">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+        <div class="hole" id="hole5">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+        <div class="hole" id="hole6">
+          <img class="face" src="image.png" alt="face" />
+        </div>
+      </div>
+
+      <div id="final-message" class="final-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
