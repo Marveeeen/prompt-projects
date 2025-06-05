@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueNest</title>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BlueNest</h1>
+    </header>
+
+    <main>
+      <!-- Lighting Control -->
+      <section id="lighting">
+        <h2><i class="fas fa-lightbulb"></i> Lighting</h2>
+        <div class="controls">
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="lightToggle"
+              onchange="toggleLights(this.checked)"
+            />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Temperature Control -->
+      <section id="temperature">
+        <h2><i class="fas fa-thermometer-half"></i> Temperature</h2>
+        <div class="temp-display" id="tempDisplay">78°F</div>
+        <div class="controls">
+          <button onclick="decreaseTemp()">
+            <i class="fas fa-arrow-down"></i> Decrease
+          </button>
+          <button onclick="increaseTemp()">
+            <i class="fas fa-arrow-up"></i> Increase
+          </button>
+        </div>
+      </section>
+
+      <!-- Music Control -->
+      <section id="music">
+        <h2><i class="fas fa-music"></i> Music</h2>
+        <div class="song-display" id="songDisplay">No song playing</div>
+        <div class="controls">
+          <button id="playPauseBtn" onclick="togglePlayPause()">
+            <i class="fas fa-play"></i> Play
+          </button>
+          <button onclick="stopMusic()">
+            <i class="fas fa-stop"></i> Stop
+          </button>
+          <button onclick="nextSong()">
+            <i class="fas fa-forward"></i> Next
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
