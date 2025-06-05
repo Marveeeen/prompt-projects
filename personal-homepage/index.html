@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="swidth=device-width, initial-scale=1.0" />
+    <title>Marvin's Homepage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slideshow.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Marvin R</div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="slider-container">
+        <!-- Slide Wrapper -->
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img src="./images/image.png" alt="Project 1" />
+            <div class="overlay">
+              <h2>Majestic Discount Form</h2>
+              <p>
+                A sleek email capture form offering 15% off for new subscribers
+                to a couple's necklace subscription. Clean design with a focus
+                on conversion.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="./images/image1.png" alt="Project 2" />
+            <div class="overlay">
+              <h2>GIF Gala RSVP</h2>
+              <p>
+                A fun RSVP form for a themed event, styled with playful colors
+                and clear inputs to gather email and attendance responses
+                easily.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="./images/image2.png" alt="Project 3" />
+            <div class="overlay">
+              <h2>FaceBomp Game</h2>
+              <p>
+                A retro-style browser game where players "bomp" popping faces
+                for points. Bright visuals, arcade font, and a playful timer
+                bring it to life.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dot Navigation -->
+        <div class="dot-nav">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="./images/7roque.jpg" alt="Photo of Marvin R" width="200" />
+        <p>
+          Hi! I'm Marvin R, a passionate developer who loves building clean,
+          useful web applications. I enjoy learning new technologies and
+          bringing ideas to life through code.
+        </p>
+        <a href="marvin-resume.pdf" target="_blank" rel="noopener noreferrer"
+          >View My Resume</a
+        >
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+          <h3>HTML</h3>
+          <p>Experienced in creating structured, semantic web pages.</p>
+          <progress value="90" max="100"></progress>
+        </div>
+
+        <div class="skill">
+          <h3>CSS</h3>
+          <p>Skilled at styling and designing responsive layouts.</p>
+          <progress value="80" max="100"></progress>
+        </div>
+
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Comfortable building interactive and dynamic web features.</p>
+          <progress value="90" max="100"></progress>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marvin R. All rights reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/marvin-roque/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/Marveeeen"
+          target="_blank"
+          aria-label="Github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/jmvroqueee/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
