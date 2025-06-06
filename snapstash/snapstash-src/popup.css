@@ -1,0 +1,116 @@
+/* Global body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc; /* Light neutral background */
+  padding: 12px;
+  width: 320px;
+  color: #333; /* Dark text */
+}
+
+/* Main title */
+h1 {
+  font-size: 20px;
+  color: #4a90e2; /* Primary blue color */
+  margin-bottom: 10px;
+}
+
+/* Preview section */
+.preview-section {
+  background-color: #e6f0fa; /* Light blue background */
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+#itemPreview {
+  font-style: italic;
+  color: #555;
+}
+
+/* Form controls */
+label {
+  display: block;
+  margin-top: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  background-color: #4a90e2; /* Primary blue */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Shopping list section */
+h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Category group */
+.category-group {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #ffffff; /* White background for list */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-group h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #4a90e2;
+}
+
+/* List items */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* Delete button style */
+.delete-button {
+  cursor: pointer;
+  color: #e74c3c; /* Red color */
+  font-size: 20px;
+  padding-left: 8px;
+}

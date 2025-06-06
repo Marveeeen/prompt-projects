@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="popup.css" />
+    <!-- Load Google Material Icons for delete buttons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>🛍️ Shopping List</h1>
+
+    <div class="preview-section">
+      <p><strong>Item Preview:</strong></p>
+      <p id="itemPreview">Loading...</p>
+    </div>
+
+    <label for="category">Select Category:</label>
+    <select id="category">
+      <option value="Books">Books</option>
+      <option value="Clothes">Clothes</option>
+      <option value="Shoes">Shoes</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Pets">Pets</option>
+      <option value="Health">Health</option>
+    </select>
+
+    <button id="saveItem">Save Item</button>
+
+    <h2>Saved Items:</h2>
+    <div id="shoppingList"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
